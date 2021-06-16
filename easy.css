@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero
+{
+   height: 100vh;
+   width: 100%;
+   background-image: url(9.jpg);
+   background-size: cover;
+   background-position: bottom;
+   background-repeat: no-repeat;
+   position: relative;
+}
+.road
+{
+    height: 130px;
+    width: 500%;
+   background-image: url(roadside.png);
+   left: 0;
+   right: 0;
+   bottom: 0;
+   position: absolute;
+   background-repeat: repeat-x;
+   animation: road 9s linear infinite;
+}
+@keyframes road
+{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+.city
+{
+   height: 330px;
+   width: 500%;
+   background-image: url(midnight\ Monn.png);
+   left: 0;
+   right: 0;
+   bottom: 0px;
+   position: absolute;
+   background-repeat: repeat-x;
+   animation: city 15s linear infinite;
+}
+@keyframes city
+{
+    100%{
+        transform: translateX(-700px);
+    }
+}
+.car
+{
+    bottom: 80px;
+    left: 40%;
+    position: absolute;
+}
+.car img
+{
+    height: 100px;
+    width: 250px;
+    animation: car 1s infinite linear;
+}
+@keyframes car{
+    0%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(-1px);
+    }
+}
+
+.backwheel{
+    border-radius: 50%;
+    border: 4px solid black;
+    bottom: 95px;
+    left: 565px;
+    position: absolute;
+    animation: wheelanimation 1s linear infinite;
+}
+@keyframes wheelanimation
+{
+    100%
+    {
+        transform: rotate(620deg);
+    }
+}
+.frontwheel{
+    border-radius: 50%;
+    border: 4px solid black;
+    bottom: 95px;
+    left: 718px;
+    position: absolute;
+    animation: wheelanimation 1s linear infinite;
+}
+
